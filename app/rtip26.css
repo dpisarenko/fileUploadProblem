@@ -1,0 +1,57 @@
+#cell1 {
+	float: left;
+	width: 20%;
+}
+
+#cell2 {
+	width: 80%;
+}
+
+#cell3 {
+	width: 100%;
+}
+.vertical {
+	display: block;
+}
+#descriptionTextArea {
+	width: 100%;
+} 
+#footer {
+	float: left;
+}
+#logoFilePicker {
+}
+
+
+input[type="file"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+#uploadDiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #uploadLabel {
+    display: inline-block;
+    position: relative;
+  }
+  
+ .uploadFile {
+  visibility: hidden;
+}
+
+#uploadIcon {
+  cursor: pointer;
+} 

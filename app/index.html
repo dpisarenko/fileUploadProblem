@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="app" ng-controller="myCtl">
+  <head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="rtip26.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.1/ui-bootstrap-tpls.js"></script>
+	
+	<script src="app.js"></script>
+  </head>
+  <body>
+	<button ng-click="buttonClicked()">Show Modal Dialog</button>
+	<script type="text/ng-template" id="myModalContent.html">
+		<div class="modal-dialog" role="document">
+		 <div class="modal-content"> 
+			<div class="modal-header">
+				<h3 class="modal-title" id="modal-title">Dialog title</h3>
+			</div>
+			<div class="modal-body" id="modal-body">
+				<div class="container-fluid">
+					<div id="cell1">
+						<img src="img/fakeLogo.png"/>
+					</div>
+					<div id="cell2">
+						<b class="vertical">Description</b>
+						<input class="vertical" type="text" value="500 characters"></input>
+						<b class="vertical">Logo upload</b>
+						<p class="vertical">Yada, yada, yada</p>
+					</div>
+
+					<button class="btn" ng-click="$ctrl.addLogo()">Add logo</button>
+					<button class="btn" ng-click="$ctrl.removeLogo()">Remove</button>
+				</div> <!-- container-fluid -->
+			</div>
+			<div id="footer" class="modal-footer">
+				<button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+				<button class="btn" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+			</div>
+			</div> <!-- modal-content -->
+		</div> <!-- modal-dialog -->
+	</script>
+  </body>
+</html>
